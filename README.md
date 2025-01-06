@@ -2,10 +2,9 @@
 
 A Python script that scrapes Twitter's trending topics using proxies, stores the data in MongoDB, and generates an HTML report.
 
+## Live Implementation
 
-<iframe width="560" height="315" src="https://youtu.be/hlxL9rRpEh4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
+[Video Link](https://youtu.be/hlxL9rRpEh4)
 
 ## Features
 
