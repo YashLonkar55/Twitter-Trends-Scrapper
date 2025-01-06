@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scraping Results</title>
+</head>
+<body>
+    <h1>These are the most happening topics as of {{ record['timestamp'] }}</h1>
+    <ul>
+        <li>{{ trending_data[0] }}</li>
+        <li>{{ trending_data[1] }}</li>
+        <li>{{ trending_data[2] }}</li>
+        <li>{{ trending_data[3] }}</li>
+        <li>{{ trending_data[4] }}</li>
+    </ul>
+    <p>The IP address used for this query was {{ ip_used }}.</p>
+
+    <h2>Here’s a JSON extract of this record from MongoDB:</h2>
+    <pre>
+        {{ record | tojson(indent=4) }}
+    </pre>
+
+    <form action="/run_scraper" method="POST">
+        <button type="submit">Click here to run the query again</button>
+    </form>
+</body>
+</html>
