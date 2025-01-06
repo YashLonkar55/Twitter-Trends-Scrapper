@@ -13,7 +13,7 @@ import time
 import json
 
 # MongoDB configuration
-MONGO_URI = "mongodb+srv://yashlonkar99:yash12345@cluster0.hmz25.mongodb.net/"
+MONGO_URI = os.getenv('MONGO_URI')
 DB_NAME = "twitter_trending"
 COLLECTION_NAME = "trending_topics"
 
