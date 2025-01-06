@@ -68,7 +68,7 @@ export TWITTER_PASSWORD="your_password"
 
 Run the script:
 ```bash
-python twitter_trending_scraper.py
+python selenium_script.py
 ```
 
 The script will:
