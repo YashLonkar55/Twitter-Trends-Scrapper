@@ -17,6 +17,16 @@ A Python script that scrapes Twitter's trending topics using proxies, stores the
 - ProxyMesh account or similar proxy service
 - Twitter account
 
+## Output
+
+The HTML report includes:
+- Top 5 trending topics
+- Current proxy IP address
+- MongoDB record details
+- Option to re-run the scraper
+
+![Output Page](./output.png)
+
 ## Installation
 
 1. Clone the repository:
@@ -67,13 +77,6 @@ The script will:
 3. Store the data in MongoDB
 4. Generate an HTML report
 
-## Output
-
-The HTML report includes:
-- Top 5 trending topics
-- Current proxy IP address
-- MongoDB record details
-- Option to re-run the scraper
 
 ## License
 
