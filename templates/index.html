@@ -3,12 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twitter Scraper</title>
+    <title>Twitter Trends Analyzer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f2f5;
+            color: #1a1a1a;
+        }
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #1da1f2;
+            margin-bottom: 2rem;
+        }
+        button {
+            background-color: #1da1f2;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #1991db;
+        }
+    </style>
 </head>
 <body>
-    <h1>Click here to run the script</h1>
-    <form action="/run_scraper" method="POST">
-        <button type="submit">Run Scraper</button>
-    </form>
+    <div class="container">
+        <h1>Twitter Trends Analyzer</h1>
+        <p>Click the button below to fetch the latest trending topics on Twitter</p>
+        <form action="/run_scraper" method="POST">
+            <button type="submit">Analyze Trends</button>
+        </form>
+    </div>
 </body>
 </html>
